@@ -1,8 +1,6 @@
-import pytest
 from src.indexer import Indexer
 from src.search import Search
 
-@pytest.fixture
 def testSearch():
     indexer = Indexer()
     indexer.index = {
