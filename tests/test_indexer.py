@@ -5,8 +5,8 @@ from src.indexer import Indexer
 def testStripText():
     indexer = Indexer()
     text = "Lorem ipsum DOLOR! sit amet. Expliciting  alit. "
-    cleaned = indexer.clean_text(text)
-    assert cleaned == ["lorem", "ipsum", "dolor", "sit", "amet", "expliiciting", "alit"]
+    cleaned = indexer.stripText(text)
+    assert cleaned == ["lorem", "ipsum", "dolor", "sit", "amet", "expliciting", "alit"]
 
 def testMakeIndex():
     indexer = Indexer()
